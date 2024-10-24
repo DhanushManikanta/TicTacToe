@@ -1,0 +1,128 @@
+/* styles.css */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background:#3A606E;
+}
+h1{
+    color: #f0f0f0;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+}
+#restart{
+    margin-top: 20px;
+    padding: 20px 30px;
+    background: #AAAE8E;
+    border: none;
+    border-radius: 20px;
+    color: #E0E0E0;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+#restart:hover{
+    background: #828E82;
+    color:#3A606E ;
+}
+.visi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #3a606eb0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    font-size: 10px;
+    font-weight: bold;
+}
+.hide{
+    display: none;
+}
+#newGame{
+    margin-top: 20px;
+    padding: 20px 30px;
+    background: #AAAE8E;
+    border: none;
+    border-radius: 20px;
+    color: #E0E0E0;
+    font-weight: bold;
+    cursor: pointer;
+}
+#newGame:hover{
+    color: #AAAE8E;
+    background: #E0E0E0;
+}
+.cell {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border: 1px solid #000;
+    color: #E0E0E0;
+    cursor: pointer;
+    background:#607B7D;
+}
+
+.cell:hover {
+    background-color: #828E82;
+}
+@media only screen and (max-width: 768px) {
+    .visi{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .visi{
+        font-size: 15px;
+    }
+}
+@media only screen and (min-width:1024px) {
+    h1{
+        font-size: 50px;
+    }
+    .cell {
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 54px;
+        border: 1px solid #000;
+        color: #E0E0E0;
+        cursor: pointer;
+        background:#607B7D;
+    }
+    #board {
+        display: grid;
+        grid-template-columns: repeat(3,300px);
+        grid-gap: 5px;
+    }
+    #restart{
+        font-size: 50px;
+    }
+    .visi{
+        font-size: 60px;
+    }
+    .visi button{
+        font-size: 50px;
+        padding: 50px;
+    }
+
+    
+}
